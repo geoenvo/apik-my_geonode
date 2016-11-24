@@ -25,7 +25,7 @@ from geonode.settings import *
 # General Django development settings
 #
 
-SITENAME = 'my_geonode'
+SITENAME = 'APIK Geoportal'
 
 # Defines the directory that contains the settings file as the LOCAL_ROOT
 # It is used for relative settings elsewhere.

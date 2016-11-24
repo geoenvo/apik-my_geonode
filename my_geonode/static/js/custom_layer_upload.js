@@ -37,12 +37,47 @@ $(function() {
     
     // set default group permissions
     // 20150921 only Pengelola-Basis-Data group for all actions by default
-    $('#permission_form input#view_resourcebase_groups').val('Pengelola-Basis-Data');
-    $('#permission_form input#download_resourcebase_groups').val('Pengelola-Basis-Data');
-    $('#permission_form input#change_resourcebase_metadata_groups').val('Pengelola-Basis-Data');
-    $('#permission_form input#change_layer_data_groups').val('Pengelola-Basis-Data');
-    $('#permission_form input#change_layer_style_groups').val('Pengelola-Basis-Data');
-    $('#permission_form input#manage_resourcebase_groups').val('Pengelola-Basis-Data');
+    //$('#permission_form input#view_resourcebase_groups').val('Pengelola-Basis-Data');
+    //$('#permission_form input#download_resourcebase_groups').val('Pengelola-Basis-Data');
+    //$('#permission_form input#change_resourcebase_metadata_groups').val('Pengelola-Basis-Data');
+    //$('#permission_form input#change_layer_data_groups').val('Pengelola-Basis-Data');
+    //$('#permission_form input#change_layer_style_groups').val('Pengelola-Basis-Data');
+    //$('#permission_form input#manage_resourcebase_groups').val('Pengelola-Basis-Data');
+
+if (id_slug = APIK-Pusat) {
+    $('#permission_form input#view_resourcebase_groups').val('APIK-Pusat');
+    $('#permission_form input#download_resourcebase_groups').val('APIK-Pusat');
+    $('#permission_form input#change_resourcebase_metadata_groups').val('APIK-Pusat');
+    $('#permission_form input#change_layer_data_groups').val('APIK-Pusat');
+    $('#permission_form input#change_layer_style_groups').val('APIK-Pusat');
+    $('#permission_form input#manage_resourcebase_groups').val('APIK-Pusat');;
+
+} else if (id_slug = APIK-Jawa-Timur) {
+    $('#permission_form input#view_resourcebase_groups').val('APIK-Jawa-Timur');
+    $('#permission_form input#download_resourcebase_groups').val('APIK-Jawa-Timur');
+    $('#permission_form input#change_resourcebase_metadata_groups').val('APIK-Jawa-Timur');
+    $('#permission_form input#change_layer_data_groups').val('APIK-Jawa-Timur');
+    $('#permission_form input#change_layer_style_groups').val('APIK-Jawa-Timur');
+    $('#permission_form input#manage_resourcebase_groups').val('APIK-Jawa-Timur');;
+
+} else if (id_slug = APIK-Sulawesi-Tenggara) {
+    $('#permission_form input#view_resourcebase_groups').val('APIK-Sulawesi-Tenggara)');
+    $('#permission_form input#download_resourcebase_groups').val('APIK-Sulawesi-Tenggara)');
+    $('#permission_form input#change_resourcebase_metadata_groups').val('APIK-Sulawesi-Tenggara)');
+    $('#permission_form input#change_layer_data_groups').val('APIK-Sulawesi-Tenggara)');
+    $('#permission_form input#change_layer_style_groups').val('APIK-Sulawesi-Tenggara)');
+    $('#permission_form input#manage_resourcebase_groups').val('APIK-Sulawesi-Tenggara)');;
+
+} else if (id_slug = APIK-Maluku) {
+    $('#permission_form input#view_resourcebase_groups').val('APIK-Maluku');
+    $('#permission_form input#download_resourcebase_groups').val('APIK-Maluku');
+    $('#permission_form input#change_resourcebase_metadata_groups').val('APIK-Maluku');
+    $('#permission_form input#change_layer_data_groups').val('APIK-Maluku');
+    $('#permission_form input#change_layer_style_groups').val('APIK-Maluku');
+    $('#permission_form input#manage_resourcebase_groups').val('APIK-Maluku');;
+
+} else {}
+
     
     // 20151019 set default date_type to publication
     $('#form_metadata [name="resource-date_type"] option[value="publication"]').attr('selected', 'selected');

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <title>{% block title %}{{ SITE_NAME }}{% endblock %}</title>
+    <title>{% block title %}{{SITE_NAME}}{% endblock %}</title>
     {% block head %}
       {% if DEBUG_STATIC %}
       <link href="{{ STATIC_URL }}lib/css/jquery.dataTables.css" rel="stylesheet" />
@@ -16,6 +16,7 @@
       {% else %}
       <link href="{{ STATIC_URL }}lib/css/assets.min.css" rel="stylesheet"/>
       {% endif %}
+      <link href="{{ STATIC_URL }}img/favicon.png" rel="shortcut icon" type="image/png">
       <link href="{{ STATIC_URL }}geonode/css/ext-compatibility.css" rel="stylesheet" />
       <link href="{{ STATIC_URL }}geonode/css/base.css" rel="stylesheet" />
       <style type="text/css">[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}</style>
@@ -206,7 +207,7 @@
     <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
+<!--          <div class="col-md-4">
             <div id="footer-logo">
               <img src="{{ STATIC_URL }}img/logo_INSTANT_small.jpg" alt="INSTANT">
             </div>
@@ -214,17 +215,14 @@
               {% trans "Powered by" %} <a href="http://geonode.org" target="_blank">{% trans "GeoNode" %}</a>
               <br>
               {% trans "Developed by" %} <a href="http://worldagroforestry.org/lama-i" target="_blank">LAMA-I Project</a> | {% trans "Supported by" %} <a href="http://www.esp3.org/index.php/en/" target="_blank">DANIDA</a>
-              <!--
               GeoNode customization by seno@geo.co.id
-              -->
             </div>
           </div>
+-->
           <div class="col-md-8">
-            <!--
             {% trans "Powered by" %} <a href="http://geonode.org">{% trans "GeoNode" %}</a> <em>{% trans "version" %} {{ VERSION }}</em> |
             <a href="{% url "developer" %}">{% trans "Developers" %}</a> |
             <a href="{% url "about" %}">{% trans "About" %}</a>
-            -->
             {% get_flatpages as flatpages %}
             <ul id="flatpages">
                 <!-- 20150921 move to top navbar
@@ -245,7 +243,7 @@
             {% endfor %}
             </ul>
           </div>
-          <!-- 20151016 hide language switcher and fill its space with flatpages
+          <!-- 20151016 hide language switcher and fill its space with flatpages-->
           <div class="col-md-4">
             <label class="hidden">{% trans "Language" %}</label>
             {% if csrf_token != "NOTPROVIDED" %}
@@ -262,7 +260,6 @@
             </form>
             {% endif %}
           </div>
-          -->
         </div>
       </div>
     </footer>

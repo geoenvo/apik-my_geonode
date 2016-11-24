@@ -1,3 +1,11 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+
+body{
+    font-family:"Source Sans Pro";
+    background: #CFCDC9;
+}
+.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{font-family:"Source Sans Pro"}
+
 #wrap {
     padding-top: 70px;
 }
@@ -12,12 +20,15 @@
 
 .navbar-brand {
     background: url(../img/logo.jpg) no-repeat;
-    width: 160px;
-    height: 90px;
-    margin-right: 0;
+    width: 166px;
+    height: 50px;
     padding-right: 160px;
-    margin: 10px 0;
+    margin: 30px 10px 10px 10px;
     text-indent: -9999em;
+}
+
+.navbar-default {
+    background-color: white;
 }
 
 .nav > li > a {
@@ -29,8 +40,9 @@
     padding-right: 7px;
 }
 
-.navbar-nav > li.active > a {
-    color: #555 !important;
+.navbar-nav > li.active > a,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: #fff !important;
     font-weight: bold;
 }
 
@@ -38,17 +50,19 @@
     color: #555 !important;
 }
 
-.navbar-nav .dropdown-menu .active a {
+.navbar-nav .dropdown-menu .active a,
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
     color: #fff !important;
 }
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>li>a:hover,
-.navbar-default .navbar-nav>li>a:focus
+.navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>.open>a,
 .navbar-default .navbar-nav>.open>a:hover,
 .navbar-default .navbar-nav>.open>a:focus {
-    background-color: #ccc;
+    background-color: #BA0C2F;
 }
 
 /* navbar searchbox */
@@ -113,6 +127,7 @@
     z-index: 10;
     left: 15%;
     right: 15%;
+    color: white; text-shadow: 0 0 0.3em #000, 0 0 0.3em #000, 0 0 0.3em #000;
 }
 
 .carousel-caption p a {
@@ -356,6 +371,10 @@ body.data #category_form .control-label {
 }
 
 /* footer */
+footer {
+    border-top: 1px solid #8C8985;
+}
+
 #footer-credits {
     margin-top: 5px;
     font-size: 12px;
@@ -405,14 +424,33 @@ body.data #category_form .control-label {
   width: 1em;
 }
 .flag-icon-id {
-  background-image: url(../img/flags/4x3/id.svg);
+  background-image: url(../img/flags/id.png);
 }
 .flag-icon-id.flag-icon-squared {
   background-image: url(../img/flags/1x1/id.svg);
 }
 .flag-icon-gb {
-  background-image: url(../img/flags/4x3/gb.svg);
+  background-image: url(../img/flags/en.png);
 }
 .flag-icon-gb.flag-icon-squared {
   background-image: url(../img/flags/1x1/gb.svg);
+}
+
+@media (min-width: 768px){
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: -20px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #205493;
+    border-color: #205493;
+}
+
+nav.filter h4 {
+    background: #205493;
+}
+
+a {
+    color: #205493;
 }
